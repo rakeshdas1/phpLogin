@@ -68,7 +68,7 @@
             </div>
             <div class="btn-group">
                 <button class="btn btn-lg btn-primary" type="submit">Sign in</button>                
-                <button class="btn btn-lg btn-primary" type="submit">Register</button>
+                <a href="register.php"><button class="btn btn-lg btn-primary" type="">Register</button></a>
             </div>
         </form>
 

@@ -3,8 +3,6 @@
     $username = "root";
     $password = "demopd";
 
-    $email;
-    $pass;
 
     try{
         $conn = new PDO("mysql:host=$servername;dbname=users", $username, $password);
@@ -74,12 +72,22 @@
         </nav>
 
         <div class="container">
-            <form class="form-horizontal" action='' method="POST">
+            <form class="form-horizontal" action="registrationcomplete.php" method="POST">
                 <fieldset>
                     <div id="legend">
                         <legend class="">Register</legend>
                     </div>
-
+                    
+                    <div class="control-group">
+                        <!-- E-mail -->
+                        <label class="control-label" for="name">Name</label>
+                        <div class="controls">
+                            <input type="text" id="name" name="name" placeholder="" class="input-xlarge">
+                            <p class="help-block">Please provide your full name.</p>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="control-group">
                         <!-- E-mail -->
                         <label class="control-label" for="email">E-mail</label>
